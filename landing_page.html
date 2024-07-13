@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Wheels Navigation Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#models">Models</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <section id="home">
+            <h1>Welcome to Cool Wheels</h1>
+            <p>Your ultimate destination for everything Cool Wheels!</p>
+        </section>
+        <section class="about">
+            <h1>About Us</h1>
+            <p>
+                Founded in 1985 by childhood friends Jake Morrison and Lisa Patel, Cool Wheels has grown from a small startup in Maplewood into a global leader in the toy industry. Known for our innovative designs and high-quality craftsmanship, we have captivated the imaginations of children and collectors around the world.
+            </p>
+            <p>
+                Today, Cool Wheels stands as a testament to the enduring appeal of toy vehicles, combining nostalgic charm with modern ingenuity. The brand's dedication to innovation and excellence ensures that it remains a beloved name in the world of toy cars for generations to come.
+            </p>
+        </section>
+        <section id="models">
+            <h1>Our Models</h1>
+            <p>Discover the latest and classic Cool Wheels models.</p>
+            <div class="gallery-container">
+                <div class="gallery-arrow left-arrow" onclick="prevImage()">&#10094;</div>
+                <img class="gallery-image" src="car1.jpeg" alt="Image 1">
+                <img class="gallery-image" src="car2.jpeg" alt="Image 2">
+                <img class="gallery-image" src="car3.jpeg" alt="Image 3">
+                <img class="gallery-image" src="car4.jpeg" alt="Image 4">
+                <img class="gallery-image" src="car5.jpeg" alt="Image 5">
+                <div class="gallery-arrow right-arrow" onclick="nextImage()">&#10095;</div>
+            </div>
+        </section>
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <p>Get in touch with us for any inquiries or support.</p>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
